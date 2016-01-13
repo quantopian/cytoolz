@@ -16,7 +16,7 @@ cdef class curry:
 
 cdef class c_memoize:
     cdef object func
-    cdef object cache
+    cdef readonly object cache
     cdef object key
     cdef bint is_unary
     cdef bint may_have_kwargs
